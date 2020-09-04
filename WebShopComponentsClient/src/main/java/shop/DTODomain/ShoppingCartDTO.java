@@ -2,8 +2,6 @@ package shop.DTODomain;
 
 import java.util.ArrayList;
 
-import shop.DTODomain.CartLineDTO;
-
 
 public class ShoppingCartDTO {
 	private String cartid;

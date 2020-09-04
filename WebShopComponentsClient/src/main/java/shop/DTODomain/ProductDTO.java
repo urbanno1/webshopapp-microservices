@@ -4,7 +4,9 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
+@Document
 public class ProductDTO {
+	@Id
 	String productnumber;
 	double price;
 	String description;

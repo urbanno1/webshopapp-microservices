@@ -5,11 +5,11 @@ import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import shop.DTODomain.OrderCustomerDTO;
-import shop.DTODomain.OrderLineDTO;
 
 
+@Document
 public class OrderDTO {
+	@Id
 	private String ordernumber;
 	private Date date;
 	private String status;

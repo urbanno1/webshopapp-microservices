@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import shop.products.DTODomian.ProductDTO;
 import shop.products.domain.Product;
+import shop.products.service.ProductCatalogService;
 import shop.products.serviceImpl.ProductCatalogServiceImpl;
 
 @RestController
 public class ProductController {
 	@Autowired
-	ProductCatalogServiceImpl productCatalogService;
+	ProductCatalogService productCatalogService;
 
 	@GetMapping("/product/{productnumber}")
 	public ResponseEntity<?> getContact(@PathVariable String productnumber) {

@@ -1,5 +1,6 @@
 package shop.DTODomain;
 
+
 public class CustomerDTO {
 	private String customerNumber;
 	private String firstname;
@@ -8,7 +9,6 @@ public class CustomerDTO {
 	private String phone;
 
 	private AddressDTO address;
-
 
 	public CustomerDTO(String customerNumber, String firstname, String lastname, String email, String phone) {
 		super();
