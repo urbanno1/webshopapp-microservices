@@ -3,5 +3,20 @@ server:
 
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+
+zuul:
+  routes:
+    product:
+      serviceId: ProductService
+    shopping:
+      serviceId: ShoppingService
+    customer:
+      serviceId: CustomerService
+    order:
+      serviceId: OrderService
+    clients:
+      serviceId: ClientService
