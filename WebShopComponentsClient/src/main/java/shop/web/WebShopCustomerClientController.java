@@ -10,7 +10,6 @@ import shop.DTODomain.CustomerDTO;
 import shop.service.CustomerFeignClient;
 
 @RestController
-@RequestMapping("/client")
 public class WebShopCustomerClientController {
 
     @Autowired

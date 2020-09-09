@@ -1,0 +1,22 @@
+server:
+  port: 8089
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+
+zuul:
+  routes:
+    product:
+      serviceId: ProductService
+    shopping:
+      serviceId: ShoppingService
+    customer:
+      serviceId: CustomerService
+    order:
+      serviceId: OrderService
+    clients:
+      serviceId: ClientService
